@@ -15,31 +15,59 @@
                     A website that helps you decide where you should eat when you ask your
                     girlfriend "So what do you want to eat?" and she responds, "I don't care."</header>
             </div>
-            <section><h6>Has she had Chipotle in the last 5 days?</h6>
-                <button>Yes</button>
-                <button>No</button>
-            </section>
-            <section> <h6>Are you trying to break up with her?</h6>
-                <button>Yes</button>
-                <button>No</button>
-            </section>
-            <section id="datequestion"><h6>What day of the week is it?</h6>
-                <div><input type="radio" name="dateq" >Monday-Wednesday</div>
-                <div><input type="radio" name="dateq" >Thursday-Friday</div>
-                <div><input type="radio" name="dateq" >Saturday-Sunday</div>
-            </section>
-                <section id="olivegarden"><h6>How does she feel about Olive Garden?</h6>
-                <button>Hates it</button>
-                <button>It's ok</button>
-            </section>
-            <section id="bloomingonion"><h6>Does she like blooming onions?</h6>
-                <button>Yes</button>
-                <button>No</button>
-            </section>
-            <section id="weekgoing"><h6>How's her week going?</h6>
-                <button>Horribly</button>
-                <button>Decently</button>
-            </section>
+            <section>
+                <div id="chip-5-days" class="row">
+                <div class="col-4"></div> <!--empty div of four columns-->
+                <h6 class="col-4">Has she had Chipotle in the last 5 days?</h6>
+                <div class="col-4"> <!--empty div of four columns-->
+                <button class="btn-outline-secondary">Yes</button>
+                <button class="btn-outline-secondary">No</button>
+                </div>
+                </div>
+                </section>
+                <section>
+                    <div id="breakup" class="row">
+                    <h6 class="col-4 offset-4">Are you trying to break up with her?</h6>
+                    <div class="col-4">
+                    <button class="btn-outline-secondary">Yes</button>
+                    <button class="btn-outline-secondary">No</button>
+                    </div>
+                    </div>
+                    <section id="datequestion" class="row">
+                        <h6 class="col-4 offset-4">
+                        What day of the week is it?
+                        </h6>
+                        <div class="col-4 row">
+                        <label><input type="radio" name="dateq" />Monday-Wednesday</label>
+                        <label><input type="radio" name="dateq" />Thursday-Friday</label>
+                        <label><input type="radio" name="dateq" />Saturday-Sunday</label>
+                        </div>
+                        </section>
+            <section id="olivegarden" class="row">
+                <h6 class="col-4 offset-4">
+                How does she feel about Olive Garden?
+                </h6>
+                <div class="col-4">
+                <button class="btn-outline-secondary">Hates it</button>
+                <button class="btn-outline-secondary">It's ok</button>
+                </div>
+                </section>
+                <section id="bloomingonion" class="row">
+                    <h6 class="col-4 offset-4">
+                    Does she like blooming onions?
+                    </h6>
+                    <div class="col-4">
+                    <button class="btn-outline-secondary">Yes</button>
+                    <button class="btn-outline-secondary">No</button>
+                    </div>
+                    </section>
+                    <section id="weekgoing" class="row">
+                        <h6 class="col-4 offset-4">How's her week going?</h6>
+                        <div class="col-4">
+                        <button class="btn-outline-secondary">Horribly</button>
+                        <button class="btn-outline-secondary">Decently</button>
+                        </div>
+                        </section>
             <div id="chipotle">Chipotle</div>
             <div id="sonic">Sonic</div>
             <div id="outback">Outback</div>
