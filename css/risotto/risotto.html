@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Risotto</title>
     <style>
-        div {
-         text-align: center;  
+        body {
+            border-style: solid;
+            border-color: pink;
+            border-width: 8px;
         }
         text {
             font-size: 60pt;
@@ -14,11 +16,44 @@
             text-transform: uppercase;
             font-weight: 600;
         }
+        .container {
+            height: 97%;
+            width: calc(100% - 8px);
+            border-style: solid;
+            border-color: red;
+            border-width: 5px;
+        }
+        .gridcontainer {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            width: 90%;
+            margin: 0 auto;
+        }
+        .blank {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            height: 40px;
+        }
+        .centered {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .single {
+            text-align: center;
+        }
+        .bold {
+            font-weight: 800;
+        }
     </style>
 </head>
 <body>
-      <div>
-      <svg width="400" height="400" viewBox="0 0 400 400">
+    <div class="container">
+    <div class="gridcontainer">
+    <div class="blank"></div>
+        
+    <div class="centered"><svg width="400" height="400" viewBox="0 0 400 400">
         <path id="curve" d="M 0,150 A 300,100 0 0,1 400,150" fill="transparent"/>
         <text text-anchor="middle">
             <textPath xlink:href="#curve" startOffset="50%">
@@ -27,6 +62,33 @@
         </text>
       </svg>
       </div>
+      <div class="centered">Risotto is a dish from Northern Italy
+
+      </div>
+        <div class="centered">Once you know</div>
+        <div class="blank"><hr></div>
+        <div class="single bold">Serves</div>
+        <div class="single bold">Preparation Time</div>
+        <div class="single bold">Cooking Time</div>
+        <div class="single">4</div>
+        <div class="single">10 minutes</div>
+        <div class="single">40 minutes</div>
+        <div class="centered"><hr></div>
+        <div class="centered">parm</div>
+        <div class="centered">-</div>
+        <div class="centered">veg stock</div>
+        <div class="centered">-</div>
+        <div class="centered">1 onion</div>
+        <div class="centered">-</div>
+        <div class="centered">butter</div>
+        <div class="centered">-</div>
+        <div class="centered">olive oil</div>
+        <div class="centered">-</div>
+        <div class="centered">risotto</div>
+        <div class="centered">-</div>
+        <div class="centered">saffron</div>
+    </div>
+    </div>
       
 </body>
 </html>
