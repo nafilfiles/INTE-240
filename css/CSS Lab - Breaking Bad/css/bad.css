@@ -1,0 +1,20 @@
+@font-face {
+    font-family: breakingfont;
+    src: url("../font/Heart Breaking Bad.woff2") 
+}
+@font-face {
+    font-family: breakingotf;
+    src: url("../font/Heart Breaking Bad.otf")
+}
+* {
+    background-color: forestgreen;
+}
+p {
+    font-family: breakingfont, breakingotf;
+    font-size: 62pt;
+    text-align: center;
+}
+span {
+    background-color: black;
+    color: white;
+}
