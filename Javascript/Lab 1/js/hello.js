@@ -1,5 +1,7 @@
 var today = new Date();
 var hourNow = today.getHours();
+var minuteNow = today.getMinutes();
+var amPm = ""
 var greeting;
 
 if (hourNow > 18) {
@@ -14,6 +16,11 @@ else if (hourNow > 0) {
 else {
  greeting = 'Welcome';
 }
+if (hourNow > 11) {
+    hourNow = hourNow - 12;
+    amPm = "pm";
+}
  document.write(greeting);
  document.write("<br>Glad you're here<br>");
- document.write(hourNow);
+ document.write(hourNow, ":",minuteNow, " ", amPm);
+ document.write()
