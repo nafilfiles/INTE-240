@@ -189,7 +189,7 @@ const voiceElementthird = document.getElementById("voice-third");
 audio.addEventListener("play", () => {
     setInterval(displayLyrics, 100);
 });
-function displayLyrics() {
+/*function displayLyrics() {
     const currentTime = audio.currentTime;
     if
         (currentLyricIndex < lyrics.length &&
@@ -198,33 +198,49 @@ function displayLyrics() {
             lyricElement.textContent = lyrics[currentLyricIndex].text;
             currentLyricIndex++;
         }
-        else if (lyrics[currentLyricIndex].voice == 'p') {
-            voiceElementoth.textContent = "Pras"
-            lyricElementoth.textContent = lyrics[currentLyricIndex].text;
-            currentLyricIndex++;
-        }
-        else if (lyrics[currentLyricIndex].voice == 'e') {
-            voiceElementoth.textContent = "Free"
-            lyricElementoth.textContent = lyrics[currentLyricIndex].text;
-            currentLyricIndex++;
-        }
-        else if (lyrics[currentLyricIndex].voice == 'g') {
-            voiceElementthird.textContent = "The Product G&B"
-            lyricElementthird.textContent = lyrics[currentLyricIndex].text;
-            currentLyricIndex++;
-            if (lyricElementthird.textContent == '') {
-                voiceElementthird.textContent = ""
-            lyricElementthird.textContent = "";
+    }
+}*/
+
+function displayLyrics() {
+    const currentTime = audio.currentTime;
+    for (let i = 0; i < lyrics.length; i++) {
+        if (currentTime >= lyrics[i].time) {
+            if (lyrics[i].voice == 'f') {
+                lyricElement.textContent = lyrics[i].text;
+                currentLyricIndex++;
             }
-        }
-        else if (lyrics[currentLyricIndex].voice == 'b') {
-            lyricElementbackup.textContent = lyrics[currentLyricIndex].text;
-            currentLyricIndex++;
-        }
-        else {
-            voiceElementoth.textContent = "Wyclef Jean"
-            lyricElementoth.textContent = lyrics[currentLyricIndex].text;
-            currentLyricIndex++;
+            else if (lyrics[i].voice == 'p') {
+                voiceElementoth.textContent = "Pras"
+                lyricElementoth.textContent = lyrics[i].text;
+                currentLyricIndex++;
+            }
+            else if (lyrics[i].voice == 'e') {
+                voiceElementoth.textContent = "Free"
+                lyricElementoth.textContent = lyrics[i].text;
+                currentLyricIndex++;
+            }
+            else if (lyrics[i].voice == 'g') {
+                voiceElementthird.textContent = "The Product G&B"
+                lyricElementthird.textContent = lyrics[i].text;
+                currentLyricIndex++;
+                if (lyricElementthird.textContent == '') {
+                    voiceElementthird.textContent = ""
+                lyricElementthird.textContent = "";
+                }
+            }
+            else if (lyrics[i].voice == 'b') {
+                lyricElementbackup.textContent = lyrics[i].text;
+                currentLyricIndex++;
+            }
+            else {
+                voiceElementoth.textContent = "Wyclef Jean"
+                lyricElementoth.textContent = lyrics[i].text;
+                currentLyricIndex++;
+            }
+            
         }
     }
 }
+/*for (let i = 0; i < lyrics.length; i++) {
+    if (currentTime >= lyrics[i].time) {
+      displayLyric(lyrics[i].text);*/

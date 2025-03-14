@@ -14,19 +14,33 @@
             Bites the Dust Queen/Wyclef Jean</h1>
         <div class="flex justify-center mb-6">
             <audio id="audio" controls class="w-full max-w-xl rounded-lg ">
+                <source 
+                src="https://ia902302.us.archive.org/17/items/02-team-1-black-rock-star-main-pass-mix_202312/01%20Another%20One%20Bites%20The%20Dust%20%28LP%29.mp3" 
+                type="audio/mpeg" /> 
                 <source src="another-one-bites-the-dust.mp3" type="audio/mpeg" />
                 Your browser does not support the audio element.
             </audio>
         </div>
         <div id="lyrics-container" class="space-y-4">
-            <p class="text-lg text-gray-700 text-right"><span id="lyric-others">this is a
-                test</span></p>
-            <p class="text-lg text-blue-700 text-left"><span id="lyric-freddie">this is a
-                    test</span></p>
+            <p class="text-lg text-gray-700 text-right">
+                <span id="voice-others" class="font-bold"></span>
+                <br>
+                <span id="lyric-others" class="mb-0"></span>
+            </p>
+            <p class="text-lg text-blue-700 text-left">
+                <span class="font-bold">Freddie Mercury:</span>
+                <br>
+                <span id="lyric-freddie"></span>
+            </p>
+            <p class="text-lg text-purple-800 text-right">
+                <span id="voice-third" class="font-bold"></span>
+                <br>
+                <span id="lyric-third" class="text-right"></span> 
+            </p>
             
         </div>
     </div>
-    <script src="duetscript.js"></script>
+    <script src="duetscript2.js"></script>
 </body>
 
 </html>
