@@ -8,12 +8,13 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
 
-<body class="bg-gray-100 font-sans text-gray-800">
-    <div class="container mx-auto p-6 max-w-2xl bg-white rounded-lg shadow-lg">
-        <h1 class="text-4xl font-bold text-center text-indigo-600 mb-6">Another One
+<body class="bg-purple-100 font-sans text-gray-800">
+    <div class="container mx-auto mt-3 p-6 max-w-2xl bg-purple-400 rounded-lg shadow-xl">
+        <h1 class="text-4xl font-bold text-center text-indigo-600 mb-2">Another One
             Bites the Dust Queen/Wyclef Jean</h1>
-        <div class="flex justify-center mb-6">
-            <audio id="audio" controls class="w-full max-w-xl rounded-lg ">
+            <hr class="border-sky-700">
+        <div class="flex justify-center mt-6 mb-6">
+            <audio id="audio" controls class="w-full max-w-xl rounded-lg  drop-shadow-lg">
                 <source 
                 src="https://ia902302.us.archive.org/17/items/02-team-1-black-rock-star-main-pass-mix_202312/01%20Another%20One%20Bites%20The%20Dust%20%28LP%29.mp3" 
                 type="audio/mpeg" /> 
@@ -22,25 +23,25 @@
             </audio>
         </div>
         <div id="lyrics-container" class="space-y-4">
-            <p class="text-lg text-gray-700 text-right">
-                <span id="voice-others" class="font-bold"></span>
+            <p class="text-lg p-1 text-gray-800 bg-lime-200 text-right rounded-lg shadow-md">
+                <span id="voice-others" class="mr-3 font-bold"></span>
                 <br>
-                <span id="lyric-others" class="mb-0"></span>
+                <span id="lyric-others" class="mb-0 mr-3"></span>
             </p>
-            <p class="text-lg text-blue-700 text-left">
-                <span class="font-bold">Freddie Mercury:</span>
+            <p class="text-lg p-1 text-blue-700 bg-amber-200 text-left rounded-lg shadow-sm">
+                <span class="ml-3 font-bold">Freddie Mercury</span>
                 <br>
-                <span id="lyric-freddie"></span>
+                <span id="lyric-freddie" class="ml-3"></span>
             </p>
-            <p class="text-lg text-purple-800 text-right">
-                <span id="voice-third" class="font-bold"></span>
+            <p class="text-lg text-purple-900 text-right">
+                <span id="voice-third" class="font-bold mr-3"></span>
                 <br>
-                <span id="lyric-third" class="text-right"></span> 
+                <span id="lyric-third" class="text-right mr-3"></span> 
             </p>
             
         </div>
     </div>
-    <script src="duetscript2.js"></script>
+    <script src="duetscript.js"></script>
 </body>
 
 </html>
