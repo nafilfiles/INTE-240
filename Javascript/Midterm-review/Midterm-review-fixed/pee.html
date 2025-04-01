@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--"what version of tailwind are you using?"-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                peegreen: '#016B60',
+              }
+            }
+          }
+        }
+      </script>
+    <link rel="stylesheet" href="css/pee.css">
+</head>
+<body>
+    <main>
+        <div class="container grid grid-cols-10 bg-slate-100 mt-5 w-[90%] min-w-[400px] text-slate-800 p-2 text-[2rem] leading-9 mx-auto capitalize text-center">
+            <div class="col-span-10" id="title">where should you pee?</div>
+            <div class="firstq col-span-10" id="where">where are you?</div>
+            <div class="firstq bg-orange-300 col-span-10" id="whereans" class="capitalize">
+                <button id="car" class="col-start-1">car</button>
+                <button id="home" class="col-start-3">home</button>
+                <button id="outside" class="col-start-5">outside</button>
+                <button id="party" class="col-start-7">party</button>
+                <button id="else" class="col-start-9">somewhere else</button>
+            </div>
+            <div class="col-span-10">
+                <div class="question" id="holdit">can you hold it?</div>
+                <div class="question" id="showerq">are you in the shower?</div>
+                <div class="question" id="peoplearound">are people around?</div>
+                <div class="question" id="drunk">are you drunk?</div>
+                <div class="question" id="sample">someone ask for a urine sample?</div>
+            </div>
+
+            <div class="col-span-10">
+                <div class="question" id="traffic">is there traffic?</div>
+                <div class="question" id="feet">washed your feet yet?</div>
+                <div class="question" id="conscious">are you conscious?</div>
+                <div class="question" id="peoplecare">do you care what people think?</div>
+            </div>
+
+            <button class="col-start-4 yes" id="yes">yes</button>
+            <button class="col-start-6 no" id="no">no</button>
+
+            <div id="results">
+                <div class="result" id="sideroad">side of the road</div>
+                <div class="result" id="showerans">shower</div>
+                <div class="result" id="bush">behind a bush</div>
+                <div class="result" id="toilet">toilet</div>
+                <div class="result" id="pants">your pants</div>
+                <div class="result" id="anywhere">anywhere you want</div>
+                <div class="result" id="cup">in a cup</div>
+            </div>
+        </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"> </script>
+    <script src="js/pee.js"></script>
+    
+</body>
+</html>

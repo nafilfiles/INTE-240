@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.capitalize * {
+    text-transform: inherit;
+}
+
+.question {
+    background-color: blue;
+}
+.firstq {
+    background-color: blue;
+}
+.result {
+    background-color: yellow;
+}
+.no {
+    background-color: red;
+}
+.yes {
+    background-color: green;
+}
