@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Midterm Exam 2025 INTE 240</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            highwaysigngreen: '#016A59',
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/highway.css">
+</head>
+
+<body class="bg-black normaltext mt-[10%]">
+  <main>
+    <div
+      class="container grid grid-cols-[7fr_1fr] highway bg-highwaysigngreen mt-5 w-[70%] min-w-[400px] text-white p-[.5rem] text-[1.875rem] leading-9 rounded-xl border-[8px] border-white mx-auto">
+      <div class="col-span-2 justify-items-center">
+        <img src="images/PA-283.svg" alt="PA-283" class="h-[80px] mb-5">
+      </div>
+      <div class="text-left">Millersville University</div>
+      <div id="mudistance" class="text-right">12</div>
+      <div class="text-left">Harrisburg</div>
+      <div id="harrisburgdistance" class="text-right">31</div>
+    </div>
+    </div>
+  </main>
+  <div class="grid grid-cols-[1fr_20px_2fr_20px_1fr] h-[150px]">
+    <div></div>
+    <div class="bg-gray-500"></div>
+    <div></div>
+    <div class="bg-gray-500"></div>
+    <div></div>
+  </div>
+  <div class="flex justify-center items-center mt-5 gap-x-5">
+    <button id="toschool" class="bg-white rounded-xl p-5">Drive to School</button>
+    <button id="fromschool" class="bg-white rounded-xl p-5">
+      Drive away from School
+    </button>
+  </div>
+  <script src="js/highway.js"></script>
+</body>
+
+</html>

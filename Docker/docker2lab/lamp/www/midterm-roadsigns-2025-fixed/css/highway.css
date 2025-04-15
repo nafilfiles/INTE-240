@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family: 'highway';
+    src: url('../font/clearviewHwy5B.ttf') format('truetype')
+}
+.normaltext {
+    font-weight: 500;
+    font-style: normal;
+    font-family: 'highway', 'sans-serif';
+}
